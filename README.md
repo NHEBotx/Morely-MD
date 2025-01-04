@@ -1,4 +1,4 @@
-### [Features]
+### `—◉ [🔻Features🔻]`
 *THERE ARE STILL MORE MENU THAN LISTED BELOW*
 
 | Group |                     Feature                |
@@ -66,5 +66,25 @@
 ### `—◉ 👾 ACTIV TERMUX 👾` 
 *- USED ON TERMUX :*
 ```bash
+🇲🇨BACA DENGAN TELITI!
+🇺🇸READ CAREFULLY!
+$ pkg update && pkg upgrade 
+$ pkg install git
+$ pkg install bash
+$ pkg install nodejs
+$ pkg install ffmpeg
+$ pkg install imagemagick
+$ pkg install libvips
+$ pkg install mc
+$ pkg install yarn
+$ git clone https://github.com/NHEBotx/Morely-MD.git
+$ cd Morely-MD
+$ pkg install unzip
+$ unzip node_module.zip
+🇺🇸If there is a red (figlet) later, it will produce a new termux input commands menu. Please type (all)
+🇲🇨Jika nanti muncul figlet merah, dan memunculkan input commands termux baru, silahkan ketikan perintah 'all' lalu klik TOMBOL ENTER
+$ npm install --cpu=wasm32 sharp
+$ npm start
+```
 
 
