@@ -1,4 +1,4 @@
-## [Features]
+### [Features]
 *THERE ARE STILL MORE MENU THAN LISTED BELOW*
 
 | Group |                     Feature                |
@@ -62,5 +62,9 @@
 |       ✅        |  Speech to text    |
 
 ... and more! Menfess, fun menu ready
+
+### `—◉ 👾 ACTIV TERMUX 👾` 
+*- USED ON TERMUX :*
+```bash
 
 
