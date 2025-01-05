@@ -80,6 +80,7 @@
 </p>
 <p align="center">
 <a href="https://github.com/nazedev"><img title="BASEORI" src="https://img.shields.io/badge/BASE ORI-NAZEDEV-green.svg?style=for-the-badge&logo=github"></a>
+
 - [WhiskeySockets](https://github.com/WhiskeySockets)
 </p>
 <p align="center">
