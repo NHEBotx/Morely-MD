@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="./media/Morely.jpg" width="100%" height="100%" style="margin-left: auto;margin-right: auto;display: block;">
+
+  
 </p>
 <h1 align="center">Morely-MD </h1>
 
