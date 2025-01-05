@@ -25,7 +25,7 @@ global.fake = {
     tmenu: 'https://i.ibb.co.com/7bVhfhb/3ed349054e5c77cfbebf58293d1e0df0.jpg',
 	texz: `${botname}`,
 	anonim: 'https://telegra.ph/file/95670d63378f7f4210f03.png',
-	thumbnailUrl: 'https://i.ibb.co.com/3rqCPX6/fk.jpg',
+	thumbnailUrl: 'https://i.ibb.co.com/pnJrbWT/IMG-20241021-WA0035.jpg',
 	thumbnail: fs.readFileSync('./src/media/sych.png'),
 	docs: fs.readFileSync('./src/media/fake.pdf'),
 	listfakedocs: ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/pdf'],
