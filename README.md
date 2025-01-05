@@ -7,7 +7,7 @@
 
 ### `—◉ 🧟[Connect with Me]`
 [![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send/?phone=62881027174423&text=.menu)
-[![GROUP](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/Bc0N1yYfNwI25RMDOrrwjg)
+[![GROUP](https://img.shields.io/badge/GrouP%20WA-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/Bc0N1yYfNwI25RMDOrrwjg)
 [![AUTHOR](https://img.shields.io/badge/Author%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6288989971490)
 
 ### `—◉ [🔻Features🔻]`
