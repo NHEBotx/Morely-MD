@@ -110,8 +110,9 @@ $ pkg install imagemagick
 $ pkg install libvips
 $ pkg install mc
 $ git clone https://github.com/NHEBotx/Morely-MD.git
-$ pkg install yarn
 $ cd Morely-MD
+$ pkg install yarn
+$ yarn
 $ pkg install unzip
 $ unzip node_module.zip
 🇺🇸If there is a red (figlet) later, it will produce a new termux input commands menu. Please type (all)
