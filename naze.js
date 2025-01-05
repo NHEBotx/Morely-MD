@@ -526,7 +526,7 @@ const listthumb = () => {
 // Fungsi untuk memilih thumbnail secara random dari daftar
 const getRandomThumb = () => {
     const thumbList = readThumbList();
-    return thumbList[Math.floor(Math.random() * thumbList.length)]?.url || 'https://i.ibb.co.com/x6cRFN1/6cbaad220c211d8399577906a2f30856.jpg';
+    return thumbList[Math.floor(Math.random() * thumbList.length)]?.url || 'https://i.ibb.co.com/NZwymSH/IMG-20241021-WA0043.jpg';
 };
 
 // Fungsi sycreply yang diperbarui
@@ -6474,7 +6474,7 @@ if (typemenu === 's1') {
       externalAdReply: {
       title: botname,
       body: owname,
-      thumbnailUrl: "https://i.ibb.co.com/zRtB6RG/37e35bef9ed65ac1b6bfee6dd26c880b.jpg",
+      thumbnailUrl: "https://i.ibb.co.com/pnJrbWT/IMG-20241021-WA0035.jpg",
       sourceUrl: my.gh,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -6499,7 +6499,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: owname,
 body: botname,
-thumbnailUrl: "https://i.ibb.co.com/zRtB6RG/37e35bef9ed65ac1b6bfee6dd26c880b.jpg",
+thumbnailUrl: "https://i.ibb.co.com/JxcvV3C/IMG-20241021-WA0037.jpg",
 sourceUrl: my.gh,
 mediaType: 1,
 renderLargerThumbnail: true
