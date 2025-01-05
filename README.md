@@ -109,8 +109,8 @@ $ pkg install ffmpeg
 $ pkg install imagemagick
 $ pkg install libvips
 $ pkg install mc
-$ pkg install yarn
 $ git clone https://github.com/NHEBotx/Morely-MD.git
+$ pkg install yarn
 $ cd Morely-MD
 $ pkg install unzip
 $ unzip node_module.zip
