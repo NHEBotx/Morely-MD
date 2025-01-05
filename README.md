@@ -1,3 +1,9 @@
+</p>
+<h1 align="center">Morely-MD </h1>
+
+</p>
+<p align="center">
+<a href="https://github.com/NHEBotx"><img title="Author" src="https://img.shields.io/badge/AUTHOR-TngxAja-green.svg?style=for-the-badge&logo=github"></a>
 ### `—◉ [🔻Features🔻]`
 *THERE ARE STILL MORE MENU THAN LISTED BELOW*
 
