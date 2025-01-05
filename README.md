@@ -86,5 +86,32 @@ $ unzip node_module.zip
 $ npm install --cpu=wasm32 sharp
 $ npm start
 ```
+### `—◉ 🇲🇨Agar Bot Terus Berjalan Di Termux`
+### `—◉ 🇺🇸To Keep Bot Running On Termux`
+```bash
+$ cd Morely-MD
+$ npm install pm2 -g
+$ pm2 start index.js -i max
+$ pm2 logs
+$ pm2 list
+$ pm2 stop index
+$ pm2 delete index
+$ pm2 restart index
+```
+---[FUNGSI/USED ON]---
+### `—◉ 🖲️FUNGSI PM2🖲️`
+- lancar dan tidak mudah mati
+- pm2 logs (melihat logs)
+- pm2 list (melihat status bot)
+- pm2 stop index (menghentikan bot)
+- pm2 delete index (menghapus bot di pm2)
+- pm2 restart index (mulai ulang)
+- Ctrl + c (keluar dari logs)
+- clear (menghapus semua log)
+---
+### `—◉ ⛓️‍💥Connection Options⛓️‍💥`
+- Support Qr Code
+- Support Pairing Code
+---
 
 
