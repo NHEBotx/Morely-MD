@@ -53,7 +53,7 @@ const { isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, sleep } =
 	* Follow https://github.com/NHEBotx
 	* Whatsapp : https://wa.me/6287862997267
 */
-figlet('SYCH', { font: 'Big' }, (err, data) => {
+figlet('ERLYKU', { font: 'Big' }, (err, data) => {
 	if (err) {
 		console.log('Error with figlet...');
 		return;
