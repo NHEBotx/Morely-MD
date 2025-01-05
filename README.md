@@ -75,6 +75,16 @@
 
 ... and more! Menfess, fun menu ready
 
+### `—◉ [🙏🏻Thanks to]`
+- [NaZe](https://github.com/nazedev)
+</p>
+<p align="center">
+<a href="https://github.com/nazedev"><img title="BASEORI" src="https://img.shields.io/badge/BASE ORI-NAZEDEV-green.svg?style=for-the-badge&logo=github"></a>
+- [WhiskeySockets](https://github.com/WhiskeySockets)
+</p>
+<p align="center">
+<a href="https://github.com/WhiskeySockets"><img title="Develop" src="https://img.shields.io/badge/Develop-WhiskeySockets-green.svg?style=for-the-badge&logo=github"></a>
+
 ### `—◉ 👾 ACTIV TERMUX 👾` 
 *- USED ON TERMUX :*
 ```bash
