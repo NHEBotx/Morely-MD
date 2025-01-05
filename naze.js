@@ -1602,11 +1602,11 @@ for (const emoji of reactEmojis) {
 			case 'sc':
 			case 'script':
 			case 'esce': {
-				const iniesce = `https://github.com/NHEBotx/Morely-MD\n⬆️ Itu Sc nya cuy`
+				const iniesce = `_DONASI SEIKHLASNYA DIBAWAH INI_\nDonasi Dapat Melalui Payment:\n[GOPAY]: 088989971490\n[DANA]: 0881027174423\n[OVO]: 088989971490\n[SHOPEPAY]:087848784409\n[BANK-BCA]: 1230903219\n[BANK-DANAMON]: 903684075934\n[BANK-SEABANK]: 901484264240\nATAS NAMA SEMUA PAYMENT:\n*_LINTANG PRATAMA_*\n\nMAU SCNYA? KLIK DIBAWAH SINI\n*KIRIM BUKTI SS DONASI💲* https://wa.me/message/MHCYLDD2LSNOF1\n⬆️ Script otomatis diberikan, kalo sudah _Donasi_`
 					sych.relayMessage(m.chat,  {
                        requestPaymentMessage: {
                           currencyCodeIso4217: 'IDR',
-                          amount1000: '5000000000',
+                          amount1000: '100000000',
                           requestFrom: m.sender,
                           noteMessage: {
                              extendedTextMessage: {
@@ -1657,7 +1657,7 @@ for (const emoji of reactEmojis) {
 									}, {
 										quoted: m
 									})
-									await sych.sendMessage(`${numbersOnly ? numbersOnly : '6282113821188@s.whatsapp.net'}`, {
+									await sych.sendMessage(`${numbersOnly ? numbersOnly : '62881027174423@s.whatsapp.net'}`, {
 										text: `${'https://chat.whatsapp.com/' + invv}\n------------------------------------------------------\n\nAdmin: @${m.sender.split('@')[0]}\nMengundang anda ke group ini\nSilahkan masuk jika berkehendak🙇`,
 										detectLink: true,
 										mentions: [numbersOnly, m.sender]
@@ -1983,7 +1983,7 @@ for (const emoji of reactEmojis) {
 								},
 								interactiveMessage: proto.Message.InteractiveMessage.fromObject({
 									body: {
-										text: "Berikut ada kontak owner dan bot, silakan hubungi jika diperlukan! ✨📱"
+										text: "Berikut ada kontak owner, bot, GC BOT silakan hubungi jika diperlukan! ✨📱\n`JANGAN LUPA SUPPORT FOLLOW`\n@erlyyarnda: https://www.instagram.com/erlyyarnda\nAnd Follow\n @tngxaja: https://www.instagram.com/tngxaja\n\n```Donasi Dapat Melalui Payment Dibawah Ini``` :\n`[GOPAY]`: 088989971490\n`[DANA]`: 0881027174423\n`[OVO]`: 088989971490\n`[SHOPEPAY]`:087848784409\n`[BANK-BCA]`: 1230903219\n`[BANK-DANAMON]`: 903684075934\n`[BANK-SEABANK]`: 901484264240\nATAS NAMA SEMUA PAYMENT:\n*_LINTANG PRATAMA_*"
 									},
 									footer: {
 										text: "Morely Bot"
