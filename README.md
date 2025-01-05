@@ -114,7 +114,7 @@ $ cd Morely-MD
 $ pkg install yarn
 $ yarn
 $ pkg install unzip
-$ unzip node_module.zip
+$ unzip node_modules.zip
 🇺🇸If there is a red (figlet) later, it will produce a new termux input commands menu. Please type (all)
 🇲🇨Jika nanti muncul figlet merah, dan memunculkan input commands termux baru, silahkan ketikan perintah 'all' lalu klik TOMBOL ENTER
 $ npm install --cpu=wasm32 sharp
