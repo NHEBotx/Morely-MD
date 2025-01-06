@@ -1,0 +1,40 @@
+name: Replit Setup
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Langkah untuk checkout repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Langkah untuk memperbarui dan menginstal paket
+      - name: Update and Install Packages
+        run: |
+          sudo apt-get update -y
+          sudo apt-get upgrade -y
+          sudo apt-get install -y git bash nodejs ffmpeg imagemagick libvips mc yarn unzip
+
+      # Langkah untuk cloning repository
+      - name: Clone Repository
+        run: git clone https://github.com/NHEBotx/Morely-MD.git
+
+      # Langkah untuk masuk ke direktori dan menjalankan instalasi
+      - name: Install Dependencies
+        working-directory: Morely-MD
+        run: |
+          yarn install
+          unzip node_modules.zip || echo "Node modules zip not found, skipping."
+          npm install --cpu=wasm32 sharp
+
+      # Langkah untuk menjalankan aplikasi
+      - name: Start Application
+        working-directory: Morely-MD
+        run: npm start
