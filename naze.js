@@ -1916,187 +1916,101 @@ for (const emoji of reactEmojis) {
 			}
 			break
 			// Bot Menu
-			const command = m.text.trim().split(' ')[0].toLowerCase();
-
-switch (command) {
-    case 'info': {
-        try {
-            const carouselCards = [{
-                header: {
-                    title: "Owner Bot",
-                    hasMediaAttachment: true,
-                    imageMessage: (await generateWAMessageContent({
-                        image: {
-                            url: './src/media/sych.png'
-                        }
-                    }, {
-                        upload: sych.waUploadToServer
-                    })).imageMessage
-                },
-                body: {
-                    text: `━━━━━━ ✨ *${botname}* ✨ ━━━━━━\n🔰 *OWNER RULES* 🔰\n🚫 Jangan spam\n🤝 Gunakan sopan\n📵 Hindari panggilan\n━━━━━━ 🌟 *Terima Kasih* 🌟 ━━━━━━`
-                },
-                footer: {
-                    text: ""
-                },
-                nativeFlowMessage: {
-                    buttons: [{
-                        "name": "cta_url",
-                        "buttonParamsJson": JSON.stringify({
-                            display_text: `Owner (TngxAja💲)`,
-                            url: `https://wa.me/+${owner}`
-                        })
-                    }]
-                }
-            }, {
-                header: {
-                    title: "Bot WhatsApp",
-                    hasMediaAttachment: true,
-                    imageMessage: (await generateWAMessageContent({
-                        image: {
-                            url: './src/media/sychy.png'
-                        }
-                    }, {
-                        upload: sych.waUploadToServer
-                    })).imageMessage
-                },
-                body: {
-                    text: `━━━━━━ ✨ *${botname}* ✨ ━━━━━━\n🔰 *BOT RULES* 🔰\n🚷 Tidak boleh spam\n💬 Tidak boleh berkata kasar\n📴 Tidak boleh call\n━━━━━━ 🔥 *Terima Kasih* 🔥 ━━━━━━`
-                },
-                footer: {
-                    text: ""
-                },
-                nativeFlowMessage: {
-                    buttons: [{
-                        "name": "cta_url",
-                        "buttonParamsJson": JSON.stringify({
-                            display_text: `Botz (${botname})🔑`,
-                            url: `https://wa.me/+${botnum}`
-                        })
-                    }]
-                }
-            }, {
-                header: {
-                    title: "GitHub Project",
-                    hasMediaAttachment: true,
-                    imageMessage: (await generateWAMessageContent({
-                        image: {
-                            url: './src/media/github.png'
-                        }
-                    }, {
-                        upload: sych.waUploadToServer
-                    })).imageMessage
-                },
-                body: {
-                    text: `━━━━━━ ✨ *${botname}* ✨ ━━━━━━\n🔗 *GitHub Project*\n\nKunjungi repositori proyek bot ini di GitHub untuk kontribusi atau melihat kodenya.`
-                },
-                footer: {
-                    text: ""
-                },
-                nativeFlowMessage: {
-                    buttons: [{
-                        "name": "cta_url",
-                        "buttonParamsJson": JSON.stringify({
-                            display_text: `Kunjungi GitHub`,
-                            url: `https://github.com/NHEbotx/Morely-MD`
-                        })
-                    }]
-                }
-            }, {
-                header: {
-                    title: "Follow Instagram",
-                    hasMediaAttachment: true,
-                    imageMessage: (await generateWAMessageContent({
-                        image: {
-                            url: './src/media/instagram.png'
-                        }
-                    }, {
-                        upload: sych.waUploadToServer
-                    })).imageMessage
-                },
-                body: {
-                    text: `━━━━━━ ✨ *${botname}* ✨ ━━━━━━\n📸 *Instagram*\n\nIkuti kami di Instagram untuk update terbaru!`
-                },
-                footer: {
-                    text: ""
-                },
-                nativeFlowMessage: {
-                    buttons: [{
-                        "name": "cta_url",
-                        "buttonParamsJson": JSON.stringify({
-                            display_text: `Kunjungi Instagram`,
-                            url: `https://instagram.com/erlyyarnda`
-                        })
-                    }]
-                }
-            }, {
-                header: {
-                    title: "[𝗡𝗛𝗘𝗕𝗼𝘁𝘅]🔗[𝗠𝗢𝗥𝗘𝗟𝗬]",
-                    hasMediaAttachment: true,
-                    imageMessage: (await generateWAMessageContent({
-                        image: {
-                            url: './src/media/whatsapp.png'
-                        }
-                    }, {
-                        upload: sych.waUploadToServer
-                    })).imageMessage
-                },
-                body: {
-                    text: `━━━━━━ ✨ *${botname}* ✨ ━━━━━━\n💬 *Group WhatsApp*\n\nBergabunglah dengan grup WhatsApp kami untuk diskusi lebih lanjut dan bantuan komunitas.`
-                },
-                footer: {
-                    text: ""
-                },
-                nativeFlowMessage: {
-                    buttons: [{
-                        "name": "cta_url",
-                        "buttonParamsJson": JSON.stringify({
-                            display_text: `Join Group WA`,
-                            url: `https://chat.whatsapp.com/Bc0N1yYfNwI25RMDOrrwjg`
-                        })
-                    }]
-                }
-            }];
-
-            // Generate carousel message
-            const carouselMessage = await generateWAMessageFromContent(m.chat, {
-                viewOnceMessage: {
-                    message: {
-                        messageContextInfo: {
-                            deviceListMetadata: {},
-                            deviceListMetadataVersion: 2
-                        },
-                        interactiveMessage: proto.Message.InteractiveMessage.fromObject({
-                            body: {
-                                text: "Berikut ada kontak owner dan bot serta tautan penting, silakan pilih link yang ingin Anda kunjungi! ✨📱\n`JANGAN LUPA SUPPORT FOLLOW`\n@erlyyarnda: https://www.instagram.com/erlyyarnda\nAnd Follow\n @tngxaja: https://www.instagram.com/tngxaja\n\n```Donasi Dapat Melalui Payment Dibawah Ini``` :\n`[GOPAY]`: 088989971490\n`[DANA]`: 0881027174423\n`[OVO]`: 088989971490\n`[SHOPEPAY]`:087848784409\n`[BANK-BCA]`: 1230903219\n`[BANK-DANAMON]`: 903684075934\n`[BANK-SEABANK]`: 901484264240\nATAS NAMA SEMUA PAYMENT:\n*_LINTANG PRATAMA_*"
-                            },
-                            footer: {
-                                text: "Morely Bot"
-                            },
-                            header: {
-                                hasMediaAttachment: false
-                            },
-                            carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({
-                                cards: carouselCards
-                            })
-                        })
-                    }
-                }
-            }, {});
-
-            // Kirim pesan carousel
-            await sych.relayMessage(m.chat, carouselMessage.message, {
-                messageId: carouselMessage.key.id
-            });
-        } catch (error) {
-            console.error("Kesalahan saat mengirim carousel:", error);
-            await sych.sendMessage(m.chat, {
-                text: "Terjadi kesalahan saat mengirim pesan carousel. Silakan hubungi AI untuk memeriksa log kesalahan."
-            }, {
-                quoted: m
-            });
-        }
-        break;
+			case 'owner': {
+				try {
+					const carouselCards = [{
+						header: {
+							title: "Owner Bot",
+							hasMediaAttachment: true,
+							imageMessage: (await generateWAMessageContent({
+								image: {
+									url: './src/media/sych.png'
+								}
+							}, {
+								upload: sych.waUploadToServer
+							})).imageMessage
+						},
+						body: {
+							text: `━━━━━━ ✨ *${botname}* ✨ ━━━━━━\n🔰 *OWNER RULES* 🔰\n🚫 Jangan spam\n🤝 Gunakan sopan\n📵 Hindari panggilan\n━━━━━━ 🌟 *Terima Kasih* 🌟 ━━━━━━`
+						},
+						footer: {
+							text: ""
+						},
+						nativeFlowMessage: {
+							buttons: [{
+								"name": "cta_url",
+								"buttonParamsJson": JSON.stringify({
+									display_text: `Owner (TngxAja💲)`, //ganti jadi (${owname})
+									url: `https://wa.me/+${owner}`
+								})
+							}]
+						}
+					}, {
+						header: {
+							title: "Bot WhatsApp",
+							hasMediaAttachment: true,
+							imageMessage: (await generateWAMessageContent({
+								image: {
+									url: './src/media/sychy.png'
+								}
+							}, {
+								upload: sych.waUploadToServer
+							})).imageMessage
+						},
+						body: {
+							text: `━━━━━━ ✨ *${botname}* ✨ ━━━━━━\n🔰 *BOT RULES* 🔰\n🚷 Tidak boleh spam\n💬 Tidak boleh berkata kasar\n📴 Tidak boleh call\n━━━━━━ 🔥 *Terima Kasih* 🔥 ━━━━━━`
+						},
+						footer: {
+							text: ""
+						},
+						nativeFlowMessage: {
+							buttons: [{
+								"name": "cta_url",
+								"buttonParamsJson": JSON.stringify({
+									display_text: `Botz (${botname})🔑`,
+									url: `https://wa.me/+${botnum}`
+								})
+							}]
+						}
+					}];
+					// Generate carousel message
+					const carouselMessage = generateWAMessageFromContent(m.chat, {
+						viewOnceMessage: {
+							message: {
+								messageContextInfo: {
+									deviceListMetadata: {},
+									deviceListMetadataVersion: 2
+								},
+								interactiveMessage: proto.Message.InteractiveMessage.fromObject({
+									body: {
+										text: "Berikut ada kontak owner, bot, GC BOT silakan hubungi jika diperlukan! ✨📱\n`JANGAN LUPA SUPPORT FOLLOW`\n@erlyyarnda: https://www.instagram.com/erlyyarnda\nAnd Follow\n @tngxaja: https://www.instagram.com/tngxaja\n\n```Donasi Dapat Melalui Payment Dibawah Ini``` :\n`[GOPAY]`: 088989971490\n`[DANA]`: 0881027174423\n`[OVO]`: 088989971490\n`[SHOPEPAY]`:087848784409\n`[BANK-BCA]`: 1230903219\n`[BANK-DANAMON]`: 903684075934\n`[BANK-SEABANK]`: 901484264240\nATAS NAMA SEMUA PAYMENT:\n*_LINTANG PRATAMA_*"
+									},
+									footer: {
+										text: "Morely Bot"
+									},
+									header: {
+										hasMediaAttachment: false
+									},
+									carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({
+										cards: carouselCards
+									})
+								})
+							}
+						}
+					}, {});
+					// Kirim pesan carousel
+					await sych.relayMessage(m.chat, carouselMessage.message, {
+						messageId: carouselMessage.key.id
+					});
+				} catch (error) {
+					console.error("Kesalahan saat mengirim carousel:", error);
+					await sych.sendMessage(m.chat, {
+						text: "Terjadi kesalahan saat mengirim pesan carousel. Silakan hubungi AI untuk memeriksa log kesalahan."
+					}, {
+						quoted: m
+					});
+				}
+			}
 			break;
 			case 'profile':
 			case 'cek': {
